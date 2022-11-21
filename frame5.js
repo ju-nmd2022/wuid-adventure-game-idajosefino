@@ -28,7 +28,6 @@ function closeModal(modal) {
 };
 //https://www.youtube.com/watch?v=MBaw_6cPmAw
 
-
 img.addEventListener('click', () => {
   img.style.display = 'none';
 });
@@ -42,4 +41,5 @@ function myFunction() {
     txt = "You pressed Cancel!";
   }
   document.getElementById("wand-image").innerHTML = txt;
+  localStorage.removeItem = "wand-image";
 }
