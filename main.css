@@ -12,18 +12,6 @@ body, html {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 /* //image made by https://www.artstation.com/artwork/0nLVrK */
-/* 
-.game-image1 {
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    animation: scaling-hero-anim 4s 0.25s cubic-bezier(0, 0.71, 0.4, 0.97)
-        forwards;
-    will-change: transform;
-} */
 
 .hero-head {
     text-align: center;
@@ -73,7 +61,6 @@ body, html {
     margin: 3%;
     position: center;
     top: 110%;
-    /* left: 32%; */
     transition-duration: 0.4s;
     cursor: pointer;
 }
