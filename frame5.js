@@ -43,3 +43,5 @@ function myFunction() {
   document.getElementById("wand-image").innerHTML = txt;
   localStorage.removeItem = "wand-image";
 }
+
+//Jag kan inte få objektet att försvinna helt när de tryckt på den. 

@@ -30,6 +30,7 @@ body, html {
     top: 170%;
     left: 40%;
     transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 .button1:hover {
@@ -47,6 +48,7 @@ body, html {
     top: 170%;
     left: 40%;
     transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 .button2:hover {
@@ -64,6 +66,7 @@ body, html {
     top: 170%;
     left: 40%;
     transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 .button3:hover {
@@ -81,6 +84,7 @@ body, html {
     top: 170%;
     left: 40%;
     transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 .button4:hover {
@@ -94,4 +98,5 @@ body, html {
     position: absolute;
     top: 80%;
     left: 20%;
+    cursor: pointer;
 }

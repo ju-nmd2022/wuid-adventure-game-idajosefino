@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slytherin Common Room</title>
     <link rel="stylesheet" type="text/css" href="frame4.css"/>
+    <script src="frame4.js" defer></script>
 </head>
 <body>
     <div class="content">
@@ -17,11 +18,21 @@
         <a href="frame3.html"><button class="button3">RAVENCLAW COMMON ROOM</button></a>
         <a href="frame5.html"><button class="button4">HUFFLEPUFF COMMON ROOM</button></a>
         <picture>
-            <img class="draco-image"
+            <img data-modal-target="#modal" class="draco-image"
             src="images/dracosmiling.svg">
             <!-- <a href="page.html"><img src="images/winewinewine.png" alt="winery"
             width="100%" height="100%"></a> -->
     </picture>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="header">Draco Malfoy</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">You want your gift back? Sure, but you have to give me the right answer to my riddle.
+            <br><br><button onclick="myFunction()">Solve riddle</button>
+            <p id="demo"></p>
+        </div>
+    </div>
     <picture>
         <img class="gift-image"
         src="images/gift.svg">

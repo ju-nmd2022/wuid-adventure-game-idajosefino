@@ -112,15 +112,6 @@ body, html {
     cursor: pointer;
 }
 
-.speech-bubble1 {
-    width: 300px;
-    height: 300px;
-    position: fixed;
-    bottom: 30%;
-    /* top: 60%; */
-    left: 45%;
-}
-
 .modal {
     position: fixed;
     top: 50%;
