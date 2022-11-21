@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ravenclaw Common Room</title>
     <link rel="stylesheet" type="text/css" href="frame3.css"/>
+    <script src="frame3.js" defer></script>
 </head>
 <body>
     <div class="content">
@@ -17,10 +18,18 @@
         <!-- <a href="frame4.html"><button class="button3">SLYTHERIN COMMON ROOM</button></a> -->
         <a href="frame5.html"><button class="button4">HUFFLEPUFF COMMON ROOM</button></a>
     <picture>
-            <img class="luna-image"
+            <img data-modal-target="#modal" class="luna-image"
             src="images/lunalovegood.svg">
             <!-- <a href="page.html"><img src="images/winewinewine.png" alt="winery"
             width="100%" height="100%"></a> -->
     </picture>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="header">Luna Lovegood</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">Hey there friend! I am almost ready for the christmas party. I can’t wait to You found my wand, thank you so much! Draco took it from me after I told him I wouldn’t help him with his homework.
+        </div>
+    </div>
 </body>
 </html>
