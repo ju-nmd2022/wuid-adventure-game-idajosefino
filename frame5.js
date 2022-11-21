@@ -1,6 +1,7 @@
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
-const closeWandImage = document.querySelectorAll('[data-wand-image]')
+const img = document.getElementById('wand-image');
+
 
 openModalButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -24,16 +25,21 @@ function openModal(modal) {
 function closeModal(modal) {
     if (modal == null) return
     modal.classList.remove('active')
-}
+};
+//https://www.youtube.com/watch?v=MBaw_6cPmAw
 
-closeWandImage.forEach(image => {
-    image.addEventListener('click', () => {
-        const wand = button.closest('.wand')
-        closeImage(wand)
-    })
-})
 
-function closeImage(wand) {
-    if (wand == null) return
-    wand.classList.remove('active')
+img.addEventListener('click', () => {
+  img.style.display = 'none';
+});
+//https://bobbyhadz.com/blog/javascript-hide-button-after-click
+
+function myFunction() {
+  var txt;
+  if (confirm("Oh look! A wand! Press OK to pick up.")) {
+    txt = "You pressed OK!";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("wand-image").innerHTML = txt;
 }
