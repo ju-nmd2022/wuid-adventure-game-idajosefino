@@ -9,15 +9,21 @@ body, html {
 }
 /* //image by https://www.artstation.com/jackiefletcher */
 
-.paragraph1 {
+.content {
     background-color: white;
-    padding: 2rem;
+    position: fixed;
+    width: 1440px;
+    top: 0%;
+    left: 0%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    /* transform: translate(-50%, -50%); */
+}
+
+.paragraph1 {
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
     text-align: center;
-    position: relative;
-    /* bottom: -60px; */
-    top: 34px;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .button1 {
@@ -27,9 +33,9 @@ body, html {
     padding-left: 2rem;
     padding: 1rem;
     margin: 3%;
-    position: center;
-    top: 170%;
-    left: 40%;
+    position: fixed;
+    top: 10%;
+    left: 0%;
     transition-duration: 0.4s;
     cursor: pointer;
 }
@@ -45,8 +51,8 @@ body, html {
     width: 250px;
     padding: 1rem;
     margin: 3%;
-    position: center;
-    top: 170%;
+    position: fixed;
+    top: 10%;
     left: 40%;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -63,9 +69,9 @@ body, html {
     width: 250px;
     padding: 1rem;
     margin: 3%;
-    position: center;
-    top: 170%;
-    left: 40%;
+    position: fixed;
+    top: 10%;
+    left: 60%;
     transition-duration: 0.4s;
     cursor: pointer;
 }
@@ -81,9 +87,9 @@ body, html {
     width: 250px;
     padding: 1rem;
     margin: 3%;
-    position: center;
-    top: 170%;
-    left: 40%;
+    position: fixed;
+    top: 10%;
+    left: 20%;
     transition-duration: 0.4s;
     cursor: pointer;
 }
@@ -100,4 +106,17 @@ body, html {
     top: 60%;
     left: 25%;
     cursor: pointer;
+}
+
+.container {
+    background-color: white;
+    bottom: 0%;
+    left: 0%;
+    position: fixed;
+    width: 300px;
+    padding: 1rem;
+}
+
+.box {
+    padding-inline-start: 2rem;
 }

@@ -28,15 +28,48 @@
             <div class="header">Draco Malfoy</div>
             <button data-close-button class="close-button">&times;</button>
         </div>
-        <div class="modal-body">Hello clumsy. You want your gift back? Sure, but you have to give me the right answer to my riddle.
-            <br><br><button onclick="myFunction()">Solve riddle</button>
-            <p id="demo"></p>
+        <div class="modal-body">Hello there clumsy. You want your gift back? Sure, but only by playing coin toss with me first. I choose TAIL.<br><br>
+            <button id="flip" type="button">Flip the coin</button>
+            <div id="result"></div>
+        <script>
+        let button = document.getElementById("flip"); 
+        let result = document.getElementById("result");
+        
+        function fnClick(event) {
+            let num = Math.random();
+            
+            if (num < 0.3) {
+                result.innerHTML = "You got HEAD, you win!";
+            } else {
+                result.innerHTML = "You got TAIL, you lose!";
+            }
+        }
+        
+        button.addEventListener("click", fnClick);
+
+                // function fnClick(event) {
+                //     let sum = (Math.floor(Math.random() * 2) == 0);
+                //     if (x == heads) {
+                //         flip("heads");
+                //         result.innerHTML = "You got HEAD, you lose!";
+                //     } else {
+                //         flip("tails");
+                //         result.innerHTML = "You got TAIL, you ";
+                //     }
+                // };
+            
+                button.addEventListener("click", fnClick);
+            </script>
+            <!-- //https://sebhastian.com/coin-flip-javascript/ -->
         </div>
     </div>
     <picture>
         <!-- <img class="gift-image"
         src="images/gift.svg"> -->
-        <!-- //this one will appear when you answer riddle correctly -->
+        <!-- //this one will appear when you answer riddle correctly and when you press it you win the game-->
 </picture>
+<div class="container">
+    <p class="box">Trunk:</p>
+</div>
 </body>
 </html>
