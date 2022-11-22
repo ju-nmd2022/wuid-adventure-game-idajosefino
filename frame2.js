@@ -2,6 +2,7 @@ const capeImage = document.getElementById('cape-image');
 const wandImageTrunk = document.getElementById('wand-image2');
 const bookImageTrunk = document.getElementById('book-image2');
 const capeImageTrunk = document.getElementById('cape-image2');
+const giftImageTrunk = document.getElementById('gift-image2');
 const closeButton = document.getElementById('close-button');
 const modal = document.getElementById('modal');
 const slytherinButton = document.getElementById('slytherin-button');
@@ -31,6 +32,12 @@ function checkLocalStorage(){
     else{
         capeImageTrunk.style.visibility = 'hidden'
         slytherinButton.style.visibility = 'hidden'
+    }
+    if(localStorage.getItem('gift')){
+        giftImageTrunk.style.visibility = 'visible'
+    }
+    else{
+        giftImageTrunk.style.visibility = 'hidden'
     }
 }
 

@@ -1,53 +1,57 @@
-const openModalButtons = document.querySelectorAll('[data-modal-target]')
-const closeModalButtons = document.querySelectorAll('[data-close-button]')
+const giftImage = document.getElementById('gift-image');
+const wandImageTrunk = document.getElementById('wand-image2');
+const bookImageTrunk = document.getElementById('book-image2');
+const dracoImage = document.getElementById('draco-image');
+const capeImageTrunk = document.getElementById('cape-image2');
+const giftImageTrunk = document.getElementById('gift-image2');
+const closeButton = document.getElementById('close-button');
+const modal = document.getElementById('modal');
+const finishGameButton = document.getElementById('finish-button');
 
-openModalButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const modal = document.querySelector(button.dataset.modalTarget)
-        openModal(modal)
-    })
-})
+console.log(modal)
 
-closeModalButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const modal = button.closest('.modal')
-        closeModal(modal)
-    })
-})
-
-function openModal(modal) {
-    if (modal == null) return
-    modal.classList.add('active')
+checkLocalStorage()
+function checkLocalStorage(){
+    if(localStorage.getItem('wand')){
+        wandImageTrunk.style.visibility = 'visible'
+    }
+    else{
+        wandImageTrunk.style.visibility = 'hidden'
+    }
+    if(localStorage.getItem('book')){
+        bookImageTrunk.style.visibility = 'visible'
+    }
+    else{
+        bookImageTrunk.style.visibility = 'hidden'
+    }
+    if(localStorage.getItem('cape')){
+        capeImageTrunk.style.visibility = 'visible'
+    }
+    else{
+        capeImageTrunk.style.visibility = 'hidden'
+    }
+    if(localStorage.getItem('gift')){
+        giftImageTrunk.style.visibility = 'visible'
+        giftImage.style.visibility = 'hidden'
+        finishGameButton.style.visibility = 'visible'
+    }
+    else{
+        giftImageTrunk.style.visibility = 'hidden'
+        finishGameButton.style.visibility = 'hidden'
+    }
 }
 
-function closeModal(modal) {
-    if (modal == null) return
-    modal.classList.remove('active')
-};
-//https://www.youtube.com/watch?v=MBaw_6cPmAw
+giftImage.addEventListener('click', (event) => {
+    giftImage.style.display = 'none';
+    localStorage.setItem('gift', true);
+    checkLocalStorage()
+});
 
-// function myFunction() {
-//     let text;
-//     let person = prompt("What building has the most stories?", "");
-//     if (person == null || answer == "") {
-//       text = "";
-//     } else {
-//       text = "Hello " + answer + "! How are you today?";
-//     }
-//     document.getElementById("demo").innerHTML = text;
-//   }
+closeButton.addEventListener('click', (event) => {
+    modal.style.transform = 'translate(-50%, -50%) scale(0)';
+});
 
-//   let num = Math.random();
-
-// if (num < 0.5) {
-//   console.log("HEAD");
-// } else {
-//   console.log("TAIL");
-// }
-
-// const coinFlipNumber = Math.floor(Math.random() * 2);
-// if (coinFlipNumber === 0) {
-//   console.log("Head");
-// } else if (coinFlipNumber === 1) {
-//   console.log("Tail");
-// }
+dracoImage.addEventListener('click', (event) => {
+    modal.style.transform = 'translate(-50%, -50%) scale(1)';
+    console.log('Hej')
+});

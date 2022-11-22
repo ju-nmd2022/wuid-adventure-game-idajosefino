@@ -1,6 +1,7 @@
 const wandImageTrunk = document.getElementById('wand-image2');
 const bookImageTrunk = document.getElementById('book-image2');
 const capeImageTrunk = document.getElementById('cape-image2');
+const giftImageTrunk = document.getElementById('gift-image2');
 const bookImage = document.getElementById('book-image');
 const closeButton = document.getElementById('close-button');
 const modal = document.getElementById('modal');
@@ -31,6 +32,12 @@ function checkLocalStorage(){
     }
     else{
         capeImageTrunk.style.visibility = 'hidden'
+    }
+    if(localStorage.getItem('gift')){
+        giftImageTrunk.style.visibility = 'visible'
+    }
+    else{
+        giftImageTrunk.style.visibility = 'hidden'
     }
 }
 

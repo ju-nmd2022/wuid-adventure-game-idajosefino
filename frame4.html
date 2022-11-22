@@ -17,48 +17,27 @@
         <a href="frame2.html"><button class="button2">GRYFFINDOOR COMMON ROOM</button></a>
         <a href="frame3.html"><button class="button3">RAVENCLAW COMMON ROOM</button></a>
         <a href="frame5.html"><button class="button4">HUFFLEPUFF COMMON ROOM</button></a>
-        <a href="gamefinish.html"><button class="button5">FINISH THE GAME</button></a>
+        <a href="gamefinish.html"><button id="finish-button" class="button5">FINISH THE GAME</button></a>
         <picture>
-            <img data-modal-target="#modal" class="draco-image"
-            src="images/dracosmiling.svg">
-            <!-- <a href="page.html"><img src="images/winewinewine.png" alt="winery"
-            width="100%" height="100%"></a> -->
+            <img data-modal-target="#modal" class="draco-image" src="images/dracosmiling.svg" id="draco-image">
     </picture>
     <div class="modal" id="modal">
         <div class="modal-header">
             <div class="header">Draco Malfoy</div>
-            <button data-close-button class="close-button">&times;</button>
+            <button id="close-button" class="close-button">&times;</button>
         </div>
-        <div class="modal-body">Hello there clumsy. You want your gift back? Sure, but only by winning against me in coin toss. I choose tail.<br><br>
-            <!-- <button id="flip" type="button">Flip the coin</button>
-            <div id="result"></div>
-    <script>
-        let button = document.getElementById("flip"); 
-        let result = document.getElementById("result");
-        
-        function fnClick(event) {
-            let num = Math.random();
-            
-            if (num < 0.3) {
-                result.innerHTML = "You got head, you win!";
-            } else {
-                result.innerHTML = "You got tail, you lose! Try again.";
-            }
-        }
-        
-        button.addEventListener("click", fnClick);
-    </script> -->
-            <!-- //https://sebhastian.com/coin-flip-javascript/ -->
+        <div class="modal-body">Hello there clumsy. You want your gift back? Sure, but only if you can answer this riddle.<br><br>
         </div>
     </div>
     <picture>
-        <img class="gift-image" src="images/gift.svg" id="gift">
+        <img class="gift-image" src="images/gift.svg" id="gift-image">
 </picture>
 <div class="container">
     <p class="box">Trunk:</p>
-    <img class="book-image2" src="images/book.svg" id="book-image2" onclick="myFunction()">
-    <img class="wand-image2" src="images/wand.svg" id="wand-image2" onclick="myFunction()">
-    <img class="cape-image2" src="images/cape.svg" id="cape-image2" onclick="myFunction()">
+    <img class="book-image2" src="images/book.svg" id="book-image2">
+    <img class="wand-image2" src="images/wand.svg" id="wand-image2">
+    <img class="cape-image2" src="images/cape.svg" id="cape-image2">
+    <img class="gift-image2" src="images/gift.svg" id="gift-image2">
 </div>
 </body>
 </html>
