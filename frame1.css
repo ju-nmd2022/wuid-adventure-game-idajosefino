@@ -100,12 +100,22 @@ body, html {
     color: white;
 }   
 
-.note-image {
-    width: 35px;
-    height: 35px;
+.book-image {
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: 80%;
+    top: 67%;
     left: 20%;
+    cursor: pointer;
+}
+
+.book-image2 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 20%;
+    /* top: 60%; */
+    left: 30%;
     cursor: pointer;
 }
 

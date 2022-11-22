@@ -164,3 +164,23 @@ body, html {
 .box {
     padding-inline-start: 2rem;
 }
+
+.wand-image2 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 20%;
+    /* top: 60%; */
+    left: 48%;
+    cursor: pointer;
+}
+
+.book-image2 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 20%;
+    /* top: 60%; */
+    left: 30%;
+    cursor: pointer;
+}

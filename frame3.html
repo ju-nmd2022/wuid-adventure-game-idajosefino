@@ -28,11 +28,32 @@
             <div class="header">Luna Lovegood</div>
             <button data-close-button class="close-button">&times;</button>
         </div>
-        <div class="modal-body">Hey there friend! I am almost ready for the party. I can’t wait to open my gift from you. Oh, and you found my wand! Thank you so much! Draco took it from me after I told him I wouldn’t help him with his homework. Also thank you for letting me borrow the invisibility cloak. It went missing for a while but maybe it was just the fact that it's... invisible. I returned it to the Gryffindor common room. See you at the party!
+        <div class="modal-body">Hey there! I am almost ready for the party. I can’t wait to open my gift from you.<br><br>
+            <button id="flip" type="button">Flip the coin</button>
+            <div id="result"></div>
+    <script>
+        let button = document.getElementById("flip"); 
+        let result = document.getElementById("result");
+        
+        function fnClick(event) {
+            let num = Math.random();
+            
+            if (num < 0.3) {
+                result.innerHTML = "You got head, you win!";
+            } else {
+                result.innerHTML = "You got tail, you lose! Try again.";
+            }
+        }
+        
+        button.addEventListener("click", fnClick);
+        // <!-- the 16 lines of code above was... https://sebhastian.com/coin-flip-javascript/ -->
+    </script>
         </div>
     </div>
     <div class="container">
         <p class="box">Trunk:</p>
+        <img class="book-image2" src="images/book.svg" id="book-image2" onclick="myFunction()">
+        <img class="wand-image2" src="images/wand.svg" id="wand-image2" onclick="myFunction()">
     </div>
 </body>
 </html>

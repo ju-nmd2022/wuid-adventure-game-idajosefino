@@ -1,7 +1,7 @@
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
 const img = document.getElementById('wand-image');
-
+const trunk = document.getElementById('trunk');
 
 openModalButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -28,20 +28,19 @@ function closeModal(modal) {
 };
 //https://www.youtube.com/watch?v=MBaw_6cPmAw
 
-img.addEventListener('click', () => {
+img.addEventListener('click', (event) => {
   img.style.display = 'none';
 });
+
 //https://bobbyhadz.com/blog/javascript-hide-button-after-click
 
-function myFunction() {
-  var txt;
-  if (confirm("Oh look! A wand! Press OK to pick up.")) {
-    txt = "You pressed OK!";
-  } else {
-    txt = "You pressed Cancel!";
-  }
-  document.getElementById("wand-image").innerHTML = txt;
-  localStorage.removeItem = "wand-image";
-}
-
-//Jag kan inte få objektet att försvinna helt när de tryckt på den. 
+// function myFunction() {
+//     var txt;
+//     if (confirm("Oh look! A wand! Press OK to pick up.")) {
+//       txt = "You pressed OK!";
+//     } else {
+//       txt = "You pressed Cancel!";
+//     }
+//     document.getElementById("wand-image").innerHTML = txt;
+//     localStorage.setItem('trunk', 'wand');
+//   }

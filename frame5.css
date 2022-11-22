@@ -34,7 +34,7 @@ body, html {
     padding: 1rem;
     margin: 3%;
     position: fixed;
-    top: 10%;
+    top: 12%;
     left: 0%;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -52,7 +52,7 @@ body, html {
     padding: 1rem;
     margin: 3%;
     position: fixed;
-    top: 10%;
+    top: 12%;
     left: 40%;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -70,7 +70,7 @@ body, html {
     padding: 1rem;
     margin: 3%;
     position: fixed;
-    top: 10%;
+    top: 12%;
     left: 20%;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -88,7 +88,7 @@ body, html {
     padding: 1rem;
     margin: 3%;
     position: center;
-    top: 10%;
+    top: 170%;
     left: 40%;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -116,6 +116,26 @@ body, html {
     bottom: 35%;
     /* top: 60%; */
     left: 85%;
+    cursor: pointer;
+}
+
+.book-image2 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 20%;
+    /* top: 60%; */
+    left: 30%;
+    cursor: pointer;
+}
+
+.wand-image2 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 20%;
+    /* top: 60%; */
+    left: 48%;
     cursor: pointer;
 }
 

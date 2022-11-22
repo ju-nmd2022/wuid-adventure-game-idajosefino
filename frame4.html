@@ -28,10 +28,10 @@
             <div class="header">Draco Malfoy</div>
             <button data-close-button class="close-button">&times;</button>
         </div>
-        <div class="modal-body">Hello there clumsy. You want your gift back? Sure, but only by playing coin toss with me first. I choose TAIL.<br><br>
-            <button id="flip" type="button">Flip the coin</button>
+        <div class="modal-body">Hello there clumsy. You want your gift back? Sure, but only by winning against me in coin toss. I choose tail.<br><br>
+            <!-- <button id="flip" type="button">Flip the coin</button>
             <div id="result"></div>
-        <script>
+    <script>
         let button = document.getElementById("flip"); 
         let result = document.getElementById("result");
         
@@ -39,37 +39,26 @@
             let num = Math.random();
             
             if (num < 0.3) {
-                result.innerHTML = "You got HEAD, you win!";
+                result.innerHTML = "You got head, you win!";
             } else {
-                result.innerHTML = "You got TAIL, you lose!";
+                result.innerHTML = "You got tail, you lose! Try again.";
             }
         }
         
         button.addEventListener("click", fnClick);
-
-                // function fnClick(event) {
-                //     let sum = (Math.floor(Math.random() * 2) == 0);
-                //     if (x == heads) {
-                //         flip("heads");
-                //         result.innerHTML = "You got HEAD, you lose!";
-                //     } else {
-                //         flip("tails");
-                //         result.innerHTML = "You got TAIL, you ";
-                //     }
-                // };
-            
-                button.addEventListener("click", fnClick);
-            </script>
+    </script> -->
             <!-- //https://sebhastian.com/coin-flip-javascript/ -->
         </div>
     </div>
     <picture>
-        <!-- <img class="gift-image"
-        src="images/gift.svg"> -->
-        <!-- //this one will appear when you answer riddle correctly and when you press it you win the game-->
+        <img class="gift-image"
+        src="images/gift.svg" id="gift">
 </picture>
 <div class="container">
     <p class="box">Trunk:</p>
+    <img class="book-image2" src="images/book.svg" id="book-image2" onclick="myFunction()">
+    <img class="wand-image2" src="images/wand.svg" id="wand-image2" onclick="myFunction()">
+    <img class="cape-image2" src="images/cape.svg" id="cape-image2" onclick="myFunction()">
 </div>
 </body>
 </html>

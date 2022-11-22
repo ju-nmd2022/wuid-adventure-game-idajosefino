@@ -25,14 +25,3 @@ function closeModal(modal) {
     modal.classList.remove('active')
 };
 //https://www.youtube.com/watch?v=MBaw_6cPmAw
-
-function myFunction() {
-    let text;
-    let person = prompt("What building has the most stories?", "");
-    if (person == null || answer == "") {
-      text = "";
-    } else {
-      text = "Hello " + answer + "! How are you today?";
-    }
-    document.getElementById("demo").innerHTML = text;
-  }
