@@ -31,23 +31,6 @@
         <div class="modal-body">Hey there! I am almost ready for the party. I can’t wait to open my gift from you.<br><br>
             <button id="flip" type="button">Flip the coin</button>
             <div id="result"></div>
-    <script>
-        let button = document.getElementById("flip"); 
-        let result = document.getElementById("result");
-        
-        function fnClick(event) {
-            let num = Math.random();
-            
-            if (num < 0.3) {
-                result.innerHTML = "You got head, you win!";
-            } else {
-                result.innerHTML = "You got tail, you lose! Try again.";
-            }
-        }
-        
-        button.addEventListener("click", fnClick);
-        // <!-- the 16 lines of code above was... https://sebhastian.com/coin-flip-javascript/ -->
-    </script>
         </div>
     </div>
     <div class="container">
