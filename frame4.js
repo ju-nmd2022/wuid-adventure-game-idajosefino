@@ -45,9 +45,9 @@ function closeModal(modal) {
 //   console.log("TAIL");
 // }
 
-const coinFlipNumber = Math.floor(Math.random() * 2);
-if (coinFlipNumber === 0) {
-  console.log("Head");
-} else if (coinFlipNumber === 1) {
-  console.log("Tail");
-}
+// const coinFlipNumber = Math.floor(Math.random() * 2);
+// if (coinFlipNumber === 0) {
+//   console.log("Head");
+// } else if (coinFlipNumber === 1) {
+//   console.log("Tail");
+// }
