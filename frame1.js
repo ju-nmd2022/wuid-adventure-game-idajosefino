@@ -37,10 +37,9 @@ function checkLocalStorage(){
 bookImage.addEventListener('click', (event) => {
     bookImage.style.display = 'none';
     modal.style.transform = 'translate(-50%, -50%) scale(1)';
-    console.log(modal)
     localStorage.setItem('book', true);
     checkLocalStorage()
-  });
+});
 
 closeButton.addEventListener('click', (event) => {
     modal.style.transform = 'translate(-50%, -50%) scale(0)';
