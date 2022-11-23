@@ -7,6 +7,7 @@ const idaImage = document.getElementById('ida-image');
 const closeButton = document.getElementById('close-button');
 const modal = document.getElementById('modal');
 const ravenclawButton = document.getElementById('ravenclaw-button');
+const slytherinButton = document.getElementById('slytherin-button');
 console.log(modal)
 
 checkLocalStorage()

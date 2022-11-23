@@ -28,7 +28,7 @@ function checkLocalStorage(){
     }
     if(localStorage.getItem('cape')){
         capeImageTrunk.style.visibility = 'visible'
-        capeImage.style.visibility = 'hidden'
+        // capeImage.style.visibility = 'hidden'
     }
     else{
         capeImageTrunk.style.visibility = 'hidden'

@@ -9,8 +9,9 @@ const modal = document.getElementById('modal');
 const gryffindorButton = document.getElementById('gryffindor-button');
 console.log(modal)
 
+gryffindorButton.style.visibility = 'hidden'
+
 checkLocalStorage()
-// modal.style.transform = 'translate(-50%, -50%) scale(1)';
 function checkLocalStorage(){
     if(localStorage.getItem('wand')){
         wandImageTrunk.style.visibility = 'visible'
@@ -20,16 +21,13 @@ function checkLocalStorage(){
     }
     if(localStorage.getItem('book')){
         bookImageTrunk.style.visibility = 'visible'
-        // bookImage.style.visibility = 'hidden'
-        // hufflepuffButton.style.visibility = 'visible'
+        // gryffindorButton.style.visibility = 'visible'
     }
     else{
         bookImageTrunk.style.visibility = 'hidden'
-        // hufflepuffButton.style.visibility = 'hidden'
     }
     if(localStorage.getItem('cape')){
         capeImageTrunk.style.visibility = 'visible'
-        // capeImage.style.visibility = 'hidden'
     }
     else{
         capeImageTrunk.style.visibility = 'hidden'
@@ -41,12 +39,6 @@ function checkLocalStorage(){
         giftImageTrunk.style.visibility = 'hidden'
     }
 }
-
-// wandImage.addEventListener('click', (event) => {
-//     wandImage.style.display = 'none';
-//     localStorage.setItem('wand', true);
-//     checkLocalStorage()
-// });
 
 closeButton.addEventListener('click', (event) => {
     modal.style.transform = 'translate(-50%, -50%) scale(0)';
@@ -65,8 +57,10 @@ function fnClick(event) {
     
     if (num < 0.3) {
         result.innerHTML = "You got head, you win!";
+        gryffindorButton.style.visibility = 'visible'
     } else {
         result.innerHTML = "You got tail, you lose! Try again.";
+        gryffindorButton.style.visibility = 'hidden'
     }
 };
 

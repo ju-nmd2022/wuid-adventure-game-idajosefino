@@ -87,8 +87,8 @@ body, html {
     width: 250px;
     padding: 1rem;
     margin: 3%;
-    position: center;
-    top: 170%;
+    position: fixed;
+    top: 12%;
     left: 40%;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -151,10 +151,6 @@ body, html {
     width: 500px;
     max-width: 80%;
 }
-
-/* .modal.active {
-    transform: translate(-50%, -50%) scale(1);
-} */
 
 .modal-header {
     padding: 10px 15px;
