@@ -1,3 +1,4 @@
+// The following lines of code was added by courtesy of Garrit Schaap.
 const wandImageTrunk = document.getElementById('wand-image2');
 const bookImageTrunk = document.getElementById('book-image2');
 const capeImageTrunk = document.getElementById('cape-image2');
@@ -8,6 +9,7 @@ const modal = document.getElementById('modal');
 const gryffindorButton = document.getElementById('gryffindor-button');
 console.log(modal)
 
+// The following lines of code was added by courtesy of Emma Åkerberg and adapted from https://www.w3schools.com/cssref/pr_background-image.php Accessed: 2022-11-18.
 gryffindorButton.style.visibility = 'hidden'
 
 checkLocalStorage()
@@ -46,7 +48,7 @@ lunaImage.addEventListener('click', (event) => {
     modal.style.transform = 'translate(-50%, -50%) scale(1)';
     console.log('Test')
 });
-
+//The following lines of code was adapted from https://sebhastian.com/coin-flip-javascript/ Accessed: 2022-11-21.
 let button = document.getElementById("flip"); 
 let result = document.getElementById("result");
 
@@ -63,4 +65,3 @@ function fnClick(event) {
 };
 
 button.addEventListener("click", fnClick);
-// <!-- the 16 lines of code above was... https://sebhastian.com/coin-flip-javascript/ -->

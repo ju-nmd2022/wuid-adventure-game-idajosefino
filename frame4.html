@@ -9,6 +9,7 @@
     <script src="frame4.js" defer></script>
 </head>
 <body>
+<!-- The following lines of code was added by courtesy of Garrit Schaap. -->
     <div class="content">
         <p class="paragraph1">With the wand, spellbook and cloak you hurry down to the dungeons and to the entrance of the Slytherin common room. You use one of the spells with the wand to disenchant the door. You then use the cloak to stay undetected. You look around and find the gift right next to Draco. You try to grab it when he's looking away but you trip over a niffler running across the floor. The cloak slips off you as you fall.
         </p>
@@ -21,20 +22,14 @@
         <picture>
             <img data-modal-target="#modal" class="draco-image" src="images/dracosmiling.svg" id="draco-image">
     </picture>
+    <!-- // The following 6 lines of code was adapted from https://www.youtube.com/watch?v=MBaw_6cPmAw Accessed: 2022-11-22. -->
     <div class="modal" id="modal">
         <div class="modal-header">
             <div class="header">Draco Malfoy</div>
             <button id="close-button" class="close-button">&times;</button>
         </div>
         <div class="modal-body">Hello there clumsy. What brings you here? You want your gift back? I was a bit angry about the fact that I wasn't invited to your party so I wanted to sabotage it a little bit. You can have the gift, but only if you can answer my riddle.<br><br>
-            <!-- <form id="quiz" name="quiz">
-                <p>What building has the most stories?</p>
-                <input id="textbox" type="text" name="question1">
-            </form>
-            <div id="after_submit">
-                <p id="message"></p>
-                <p id="number_correct"></p> -->
-    <!-- //the 7 lines of code above courtesy: https://wlgblog.weebly.com/coding-robotics/simple-html-css-and-javascript-quiz -->
+<!-- // The following 7 lines of code was adapted from https://codereview.stackexchange.com/questions/279777/basic-quiz-game-in-html-and-javascript Accessed: 2022-11-23. -->
     <button id="btn" type="submit" onclick="quiz()">Solve riddle.</button>
     <h6 id="question"></h6>
     <h6 id="ans" style="display: none;"></h6>
@@ -45,6 +40,7 @@
 </div>
         </div>
     </div>
+<!-- The following lines of code was added by courtesy of Garrit Schaap. -->
     <picture>
         <img class="gift-image" src="images/gift.svg" id="gift-image">
 </picture>

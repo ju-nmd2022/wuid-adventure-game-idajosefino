@@ -1,3 +1,4 @@
+// The following lines of code was added by courtesy of Garrit Schaap.
 const wandImageTrunk = document.getElementById('wand-image2');
 const bookImageTrunk = document.getElementById('book-image2');
 const capeImageTrunk = document.getElementById('cape-image2');
@@ -8,7 +9,7 @@ const modal = document.getElementById('modal');
 const hufflepuffButton = document.getElementById('hufflepuff-button');
 
 console.log(modal)
-
+// The following lines of code was added by courtesy of Emma Åkerberg and adapted from https://www.w3schools.com/cssref/pr_background-image.php Accessed: 2022-11-18.
 checkLocalStorage()
 function checkLocalStorage(){
     if(localStorage.getItem('wand')){
@@ -28,7 +29,6 @@ function checkLocalStorage(){
     }
     if(localStorage.getItem('cape')){
         capeImageTrunk.style.visibility = 'visible'
-        // capeImage.style.visibility = 'hidden'
     }
     else{
         capeImageTrunk.style.visibility = 'hidden'

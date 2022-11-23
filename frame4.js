@@ -1,3 +1,4 @@
+// The following lines of code was added by courtesy of Garrit Schaap.
 const giftImage = document.getElementById('gift-image');
 const wandImageTrunk = document.getElementById('wand-image2');
 const bookImageTrunk = document.getElementById('book-image2');
@@ -9,7 +10,7 @@ const modal = document.getElementById('modal');
 const finishGameButton = document.getElementById('finish-button');
 
 console.log(modal)
-
+// The following lines of code was added by courtesy of Emma Åkerberg and adapted from https://www.w3schools.com/cssref/pr_background-image.php Accessed: 2022-11-18.
 checkLocalStorage()
 function checkLocalStorage(){
     if(localStorage.getItem('wand')){
@@ -57,7 +58,7 @@ dracoImage.addEventListener('click', (event) => {
     modal.style.transform = 'translate(-50%, -50%) scale(1)';
     console.log('Hej')
 });
-
+//// The following lines of code was adapted from https://codereview.stackexchange.com/questions/279777/basic-quiz-game-in-html-and-javascript Accessed: 2022-11-23.
 let q = ["What building has the most stories?", 
 ];
 
@@ -102,9 +103,7 @@ function evaluation() {
             document.getElementById("input").style.display = "none";
             document.getElementById("btn2").style.display = "none";
             giftImage.style.visibility = 'hidden'
-
         }
-      
         
     }
 }

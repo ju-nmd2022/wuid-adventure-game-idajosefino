@@ -1,4 +1,5 @@
 body, html {
+/* //The following 2 lines of code was adapted from https://www.w3schools.com/cssref/pr_background-image.php Accessed: 2022-11-17. */
     background-image: url(images/winter2.jpg);
     background-color: #cccccc;
     background-size: cover;
@@ -21,6 +22,7 @@ body, html {
     transform: translate(-50%, -50%);
 }
 
+/* The following 22 lines of code was adapted from https://codepen.io/alvarotrigo/pen/xxLvyOG Accessed: 2022-11-16. */
 .waviy {
     -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
     font-size: 31px;
@@ -43,7 +45,7 @@ body, html {
       transform: translateY(-20px)
     }
   }
-
+/* The following 8 lines of code was adapted from https://codepen.io/bvg-studio/pen/vYjoxEK Accessed: 2022-11-16. */
   @keyframes scaling-hero-anim {
     from {
       transform: scale(1.25);

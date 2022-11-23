@@ -1,4 +1,5 @@
 body, html {
+/* //The following 2 lines of code was adapted from https://www.w3schools.com/cssref/pr_background-image.php Accessed: 2022-11-17. */
     background-image: url(images/room\ of\ rec.png);
     background-color: #cccccc;
     background-size: cover;

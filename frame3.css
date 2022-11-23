@@ -1,4 +1,5 @@
 body, html {
+/* //The following 2 lines of code was adapted from https://www.w3schools.com/cssref/pr_background-image.php Accessed: 2022-11-17. */
     background-image: url(images/ravenclaw\ empty.png);
     background-color: #cccccc;
     background-size: cover;
@@ -17,7 +18,6 @@ body, html {
     left: 0%;
     padding-bottom: 1rem;
     padding-top: 1rem;
-    /* transform: translate(-50%, -50%); */
 }
 
 .paragraph1 {
@@ -104,7 +104,6 @@ body, html {
     height: 500px;
     position: fixed;
     bottom: 0%;
-    /* top: 60%; */
     left: 55%;
     cursor: pointer;
 }
@@ -121,10 +120,6 @@ body, html {
     width: 500px;
     max-width: 80%;
 }
-
-/* .modal.active {
-    transform: translate(-50%, -50%) scale(1);
-} */
 
 .modal-header {
     padding: 10px 15px;
@@ -170,7 +165,6 @@ body, html {
     height: 50px;
     position: absolute;
     bottom: 20%;
-    /* top: 60%; */
     left: 48%;
     cursor: pointer;
 }
@@ -180,7 +174,6 @@ body, html {
     height: 50px;
     position: absolute;
     bottom: 20%;
-    /* top: 60%; */
     left: 30%;
     cursor: pointer;
 }
@@ -190,7 +183,6 @@ body, html {
     height: 50px;
     position: absolute;
     bottom: 20%;
-    /* top: 60%; */
     left: 66%;
     cursor: pointer;
 }
@@ -200,7 +192,6 @@ body, html {
     height: 50px;
     position: absolute;
     bottom: 20%;
-    /* top: 60%; */
     left: 80%;
     cursor: pointer;
 }
