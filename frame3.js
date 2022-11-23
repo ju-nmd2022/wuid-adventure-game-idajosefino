@@ -1,4 +1,3 @@
-// const wandImage = document.getElementById('wand-image');
 const wandImageTrunk = document.getElementById('wand-image2');
 const bookImageTrunk = document.getElementById('book-image2');
 const capeImageTrunk = document.getElementById('cape-image2');
@@ -21,7 +20,6 @@ function checkLocalStorage(){
     }
     if(localStorage.getItem('book')){
         bookImageTrunk.style.visibility = 'visible'
-        // gryffindorButton.style.visibility = 'visible'
     }
     else{
         bookImageTrunk.style.visibility = 'hidden'

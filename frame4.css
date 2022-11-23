@@ -233,3 +233,16 @@ body, html {
     left: 80%;
     cursor: pointer;
 }
+
+.quiz {
+    margin-left: 10px;
+    background: #d2def2;
+    padding: 10px 20px 10px 20px;
+    width: 400px;
+    border-radius: 20px;
+    float: left;
+}
+ 
+#after_submit {
+    visibility: hidden;
+}

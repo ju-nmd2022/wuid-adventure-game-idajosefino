@@ -27,14 +27,22 @@
             <button id="close-button" class="close-button">&times;</button>
         </div>
         <div class="modal-body">Hello there clumsy. I was a bit angry about the fact that I wasn't invited to your party so I wanted to sabotage for you a little bit. You want your gift back? Sure, but only if you can answer my riddle.<br><br>
-            <form id="quiz" name="quiz">
+            <!-- <form id="quiz" name="quiz">
                 <p>What building has the most stories?</p>
                 <input id="textbox" type="text" name="question1">
             </form>
             <div id="after_submit">
                 <p id="message"></p>
-                <p id="number_correct"></p>
-    <!-- //the 7 lines of code above courtesy: https://wlgblog.weebly.com/coding-robotics/simple-html-css-and-javascript-quiz --></div>
+                <p id="number_correct"></p> -->
+    <!-- //the 7 lines of code above courtesy: https://wlgblog.weebly.com/coding-robotics/simple-html-css-and-javascript-quiz -->
+    <button id="btn" type="submit" onclick="quiz()">Solve riddle.</button>
+    <h6 id="question"></h6>
+    <h6 id="ans" style="display: none;"></h6>
+    <input type="text" id="input" style="display: none;" placeholder="Write your answer..">
+    <br>
+    <button id="btn2" type="submit" style="display: none;" onclick="evaluation()">Guess</button>
+    <h6 id="score" style="display: none;"></h6>
+</div>
         </div>
     </div>
     <picture>

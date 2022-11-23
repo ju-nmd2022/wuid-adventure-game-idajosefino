@@ -38,6 +38,8 @@ function checkLocalStorage(){
     else{
         giftImageTrunk.style.visibility = 'hidden'
         finishGameButton.style.visibility = 'hidden'
+        giftImage.style.visibility = 'hidden'
+
     }
 }
 
@@ -56,33 +58,54 @@ dracoImage.addEventListener('click', (event) => {
     console.log('Hej')
 });
 
-function check(){
- 
-    var question1 = document.quiz.question1.value;
-    var correct = 0;
- 
-    if (question1 == "Library"){
-        correct++;
-        // giftImage.style.visibility = 'visible'
-    }
+let q = ["What building has the most stories?", 
+];
 
-    var messages = ["You're no fun... Here's the gift.", "You really need to do better. There's clues hidden all over Hogwarts."];
-    var range;
- 
-    if (correct < 1) {
-        range = 2;
-    }
-    // if (correct > 0 && correct < 3) {
-    //     range = 1;
-    // }
-    // if (correct > 2) {
-    //     range = 0;
-    // }
- 
-    document.getElementById("after_submit").style.visibility = "visible";
- 
-    document.getElementById("message").innerHTML = messages[range];
-    document.getElementById("number_correct").innerHTML = "You got "+correct+" correct!";
+let score = 0;
+let k = 0;
+let len = q.length;
+
+function quiz() {
+    let var1 = document.getElementById("question");
+    var1.innerHTML = q[0];
+    document.getElementById("ans").style.display = "block";
+    document.getElementById("input").style.display = "block";
+    document.getElementById("btn2").style.display = "block";
+    document.getElementById("score").style.display = "block";
+
+    document.getElementById("btn").style.display = "none";
 }
-//Question: I want to add the question and only Library is the right word, the rest leaves them with the "you really need to do better text
-// if they get the question right they get the other message and the gift shows and when you press the gift the finish game button shows.
+
+function evaluation() {
+    let var2 = document.getElementById("question");
+    let var3 = document.getElementById("input");
+
+    if (var2.innerHTML === "What building has the most stories?" && var3.value ==="Library" || var3.value === "Library")
+    {
+        alert("Correct Answer.");
+        k++;
+        var2.innerHTML = q[k];
+        var3.value = null;
+        score++;
+        giftImage.style.visibility = 'visible'
+        modal.style.transform = 'translate(-50%, -50%) scale(0)';
+    } 
+    else {
+        alert("Wrong Answer!")
+        var3.value = null;
+        if(k < len-1){
+            k++;
+            var2.innerHTML = q[k];
+        }else {
+            var2.innerHTML = "You really need to do better. There's clues hidden all over Hogwarts. Update the page to guess again."
+            document.getElementById("ans").style.display = "none";
+            document.getElementById("input").style.display = "none";
+            document.getElementById("btn2").style.display = "none";
+            giftImage.style.visibility = 'hidden'
+            // modal.style.transform = 'translate(-50%, -50%) scale(0)';
+
+        }
+      
+        
+    }
+}
