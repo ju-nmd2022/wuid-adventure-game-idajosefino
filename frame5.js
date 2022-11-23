@@ -12,7 +12,7 @@ const secondModal = document.getElementById('modal2');
 const ravenclawButton = document.getElementById('ravenclaw-button');
 
 console.log(modal)
-// The following lines of code was added by courtesy of Emma Åkerberg and adapted from https://www.w3schools.com/cssref/pr_background-image.php Accessed: 2022-11-18.
+// The following lines of code was added by courtesy of Emma Åkerberg and adapted from https://www.w3schools.com/js/js_if_else.asp Accessed: 2022-11-18.
 checkLocalStorage()
 function checkLocalStorage(){
     if(localStorage.getItem('wand')){
