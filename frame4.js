@@ -102,7 +102,6 @@ function evaluation() {
             document.getElementById("input").style.display = "none";
             document.getElementById("btn2").style.display = "none";
             giftImage.style.visibility = 'hidden'
-            // modal.style.transform = 'translate(-50%, -50%) scale(0)';
 
         }
       

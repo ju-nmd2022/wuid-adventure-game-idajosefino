@@ -22,6 +22,7 @@ function checkLocalStorage(){
     else{
         wandImageTrunk.style.visibility = 'hidden'
         ravenclawButton.style.visibility = 'hidden'
+        wandImage.style.visibility = 'hidden'
     }
     if(localStorage.getItem('book')){
         bookImageTrunk.style.visibility = 'visible'
@@ -44,7 +45,6 @@ function checkLocalStorage(){
 }
 
 wandImage.addEventListener('click', (event) => {
-    wandImage.style.display = 'none';
     secondModal.style.transform = 'translate(-50%, -50%) scale(1)';
     localStorage.setItem('wand', true);
     checkLocalStorage()
@@ -52,11 +52,11 @@ wandImage.addEventListener('click', (event) => {
 
 closeButton.addEventListener('click', (event) => {
     modal.style.transform = 'translate(-50%, -50%) scale(0)';
+    wandImage.style.visibility = 'visible'
 });
 
 idaImage.addEventListener('click', (event) => {
     modal.style.transform = 'translate(-50%, -50%) scale(1)';
-    console.log('Hej')
 });
 
 secondCloseButton.addEventListener('click', (event) => {
