@@ -9,6 +9,7 @@ const secondCloseButton = document.getElementById('close-button2');
 const modal = document.getElementById('modal');
 const secondModal = document.getElementById('modal2');
 const ravenclawButton = document.getElementById('ravenclaw-button');
+
 console.log(modal)
 
 checkLocalStorage()
