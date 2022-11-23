@@ -5,7 +5,9 @@ const capeImageTrunk = document.getElementById('cape-image2');
 const giftImageTrunk = document.getElementById('gift-image2');
 const idaImage = document.getElementById('ida-image');
 const closeButton = document.getElementById('close-button');
+const secondCloseButton = document.getElementById('close-button');
 const modal = document.getElementById('modal');
+const secondModal = document.getElementById('modal2');
 const ravenclawButton = document.getElementById('ravenclaw-button');
 const slytherinButton = document.getElementById('slytherin-button');
 console.log(modal)
@@ -43,6 +45,7 @@ function checkLocalStorage(){
 
 wandImage.addEventListener('click', (event) => {
     wandImage.style.display = 'none';
+    secondModal.style.transform = 'translate(-50%, -50%) scale(1)';
     localStorage.setItem('wand', true);
     checkLocalStorage()
   });
@@ -54,4 +57,8 @@ closeButton.addEventListener('click', (event) => {
 idaImage.addEventListener('click', (event) => {
     modal.style.transform = 'translate(-50%, -50%) scale(1)';
     console.log('Hej')
+});
+
+secondCloseButton.addEventListener('click', (event) => {
+    secondModal.style.transform = 'translate(-50%, -50%) scale(0)';
 });
