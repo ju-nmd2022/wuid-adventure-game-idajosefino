@@ -5,11 +5,11 @@ const bookImageTrunk = document.getElementById('book-image2');
 const capeImageTrunk = document.getElementById('cape-image2');
 const giftImageTrunk = document.getElementById('gift-image2');
 const closeButton = document.getElementById('close-button');
-const modal = document.getElementById('modal');
+// const modal = document.getElementById('modal');
 const slytherinButton = document.getElementById('slytherin-button');
 
 console.log(modal)
-// The following lines of code was added by courtesy of Emma Åkerberg and adapted from https://www.w3schools.com/cssref/pr_background-image.php Accessed: 2022-11-18.
+// The following lines of code was added by courtesy of Emma Åkerberg and adapted from https://www.w3schools.com/js/js_if_else.asp Accessed: 2022-11-18.
 checkLocalStorage()
 function checkLocalStorage(){
     if(localStorage.getItem('wand')){
