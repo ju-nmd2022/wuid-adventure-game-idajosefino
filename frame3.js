@@ -58,7 +58,7 @@ function fnClick(event) {
     if (num < 0.3) {
         result.innerHTML = "You got head, you win!";
         gryffindorButton.style.visibility = 'visible'
-    } else {
+    } else if (num >= 0.3) {
         result.innerHTML = "You got tail, you lose! Try again.";
         gryffindorButton.style.visibility = 'hidden'
     }
